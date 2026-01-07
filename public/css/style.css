@@ -1,0 +1,30 @@
+/* public/css/style.css */
+
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tarjeta de login */
+.card {
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: #6f42c1;
+    /* tono violeta elegante */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5a32a3;
+}
+
+/* Título */
+h2 {
+    color: #6f42c1;
+    font-weight: bold;
+}

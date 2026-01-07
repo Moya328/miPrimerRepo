@@ -1,0 +1,16 @@
+Modelo de usuario User.php
+El modelo encapsula el acceso a la base de datos relacionado con “usuarios”. Su objetivo es que el controlador no tenga que escribir SQL ni preocuparse por la conexión. Así mantenés separación de responsabilidades:
+
+Controlador: recibe datos del formulario, valida y decide (login OK o error).
+
+Modelo: ejecuta consultas concretas (buscar usuario por DNI).
+
+Conexión: vive en include/connection.php y es reutilizada por todo.
+
+Puntos clave del modelo:
+
+Reutiliza la conexión PDO creada en include/connection.php.
+
+Ofrece un método explícito para buscar por DNI.
+
+Devuelve un array asociativo con los campos necesarios para validar la contraseña.
