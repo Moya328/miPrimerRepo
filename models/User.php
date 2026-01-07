@@ -21,10 +21,10 @@ class User
     public function findByDni(string $dni)
     {
         $stmt = $this->db->prepare(
-            'SELECT id, nombre, dni, password_hash 
-             FROM usuarios 
-             WHERE dni = ? 
-             LIMIT 1'
+            'SELECT id, nombre, dni, password_hash, tipoUsuario_id 
+         FROM usuarios 
+         WHERE dni = ? 
+         LIMIT 1'
         );
         $stmt->execute([$dni]);
         return $stmt->fetch(PDO::FETCH_ASSOC);

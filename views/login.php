@@ -30,7 +30,8 @@ $dniValue = $_GET['dni'] ?? '';
         <form action="../controllers/loginController.php" method="POST">
             <div class="mb-3">
                 <label for="dni" class="form-label">DNI</label>
-                <input type="text" class="form-control" id="dni" name="dni" placeholder="12345678" value="<?= htmlspecialchars($dniValue) ?>"  required>
+                <input type="text" class="form-control" id="dni" name="dni" placeholder="12345678"
+                    value="<?= htmlspecialchars($dniValue) ?>" required>
                 <div class="invalid-feedback">Ingrese un DNI válido (7 u 8 dígitos).</div>
             </div>
             <div class="mb-3">
@@ -41,7 +42,6 @@ $dniValue = $_GET['dni'] ?? '';
             </div>
             <button type="submit" class="btn btn-primary w-100">Entrar</button>
         </form>
-        <p class="text-center mt-3"><small>¿No tienes cuenta? <a href="#">Regístrate</a></small></p>
     </div>
 
     <!-- Bootstrap JS -->
